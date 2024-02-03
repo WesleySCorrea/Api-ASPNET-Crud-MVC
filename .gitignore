@@ -1,0 +1,95 @@
+# Ignora arquivos temporários
+bin/
+obj/
+
+# Ignora arquivos de compilação
+*.dll
+*.exe
+*.pdb
+
+# Ignora arquivos de publicação
+*.publishsettings
+node_modules/
+publish/
+
+# Ignora arquivos de usuário
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# Ignora arquivos de log
+*.log
+
+# Ignora diretórios específicos
+.vscode/
+.idea/
+__pycache__/
+
+# Ignora arquivos de build do Visual Studio
+*.user
+*.aps
+*.idb
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.dll
+*.exe
+*.json
+*.hmap
+*.aps
+*.vc.db
+*.sdf
+ipch/
+obj/
+Debug/
+Release/
+ReSharper*/
+[Tt]humbs.db
+[Tt]est[Rr]esult*/
+[Rr]elease*/
+Ankh.NoLoad
+
+# Ignora arquivos de configuração de ambiente
+*.env
+
+# Ignora arquivos de configuração do Rider
+.idea/
+*.sln.iml
+
+# Ignora arquivos do Visual Studio Code
+.vscode/
+.project
+.settings
+
+# Ignora arquivos específicos do Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignora arquivos de backup do Windows
+$RECYCLE.BIN/
+$Recycle.Bin/
+$Recycle.Bin*/
+[Rr][Ee][Cc][Yy][Cc][Ll][Ee].[Bb][Ii][Nn]/
+
+# Ignora arquivos de sistema da Apple
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignora arquivos temporários do Windows
+Thumbs.db
+ehthumbs.db
+
+# Ignora arquivos de sistema no Linux
+lost+found/
