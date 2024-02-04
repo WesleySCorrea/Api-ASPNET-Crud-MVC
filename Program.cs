@@ -1,8 +1,12 @@
 
 using ApiCrudTasks.Data;
+using ApiCrudTasks.Integration;
+using ApiCrudTasks.Integration.Interfaces;
+using ApiCrudTasks.Integration.Refit;
 using ApiCrudTasks.Repositories;
 using ApiCrudTasks.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using Refit;
 
 namespace ApiCrudTasks
 {
@@ -26,6 +30,12 @@ namespace ApiCrudTasks
 
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+            builder.Services.AddScoped<IViaCepIntegration, ViaCepIntegration>();
+
+            builder.Services.AddRefitClient<IViaCepIntegrationRefit>().ConfigureHttpClient(c =>
+            {
+                c.BaseAddress = new Uri("https://viacep.com.br/");
+            });
 
             var app = builder.Build();
 
